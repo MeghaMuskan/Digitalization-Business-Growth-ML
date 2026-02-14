@@ -102,6 +102,27 @@ Digitalization-Business-Growth-ML/
 
 ---
 
+## 👩‍💻 Team Contributions
+
+**Megha Muskan**
+
+* Data collection (Chakradharpur region)
+* Data preprocessing and cleaning
+* Feature engineering and encoding
+* Exploratory Data Analysis (EDA)
+* Machine Learning model building and evaluation
+* GitHub repository creation and documentation
+
+**Anshuman**
+
+* Data collection (Jamshedpur region)
+
+**Arpita**
+
+* Data collection (Ranchi region)
+
+---
+
 ## 👩‍💻 Author
 **Megha Muskan**  
 B.Tech CSE | Data Analytics & ML Enthusiast
