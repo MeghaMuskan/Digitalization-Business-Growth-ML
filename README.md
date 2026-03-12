@@ -1,129 +1,174 @@
-# Digitalization-Business-Growth-ML
-ML project analyzing impact of digitalization on small business growth
 # 📊 Digitalization Impact on Small Business Growth (ML Project)
 
-This machine learning project analyzes how digital tools such as UPI payments, online marketplaces, and digital record keeping impact the growth of small businesses.
+This machine learning project analyzes how digital tools such as **UPI payments, online marketplaces, digital communication, and digital record keeping** impact the growth of small businesses.
 
-The objective is to determine whether digital adoption leads to measurable business growth using real survey data and machine learning models.
-
----
-
-## 📌 Project Objective
-To analyze the impact of digitalization on small businesses and predict whether a business will experience growth due to digital tool adoption.
-
-This project uses survey data collected from small businesses across multiple cities and applies machine learning to identify patterns influencing business growth.
+Using survey data collected from local businesses, machine learning models are trained to predict whether **digital adoption leads to measurable business growth**.
 
 ---
 
-## 🧾 Dataset Information
-The dataset contains survey responses from small businesses including:
+# 📌 Project Overview
+
+Small businesses are increasingly adopting digital tools to improve efficiency, attract customers, and manage operations.
+
+This project explores whether **digital adoption contributes to business growth** by analyzing survey responses from small businesses across multiple cities.
+
+Machine learning models are used to identify patterns and predict the likelihood of business growth.
+
+---
+
+# 🎯 Project Objective
+
+The main objectives of this project are:
+
+- Analyze how digital tools affect small business operations
+- Identify which digital factors influence business growth
+- Build machine learning models to predict business growth
+- Compare multiple models to find the best performing one
+
+---
+
+# 🧾 Dataset Information
+
+The dataset contains **survey responses from 193 small businesses**.
+
+Features include:
 
 - Smartphone usage for business  
 - Internet usage for communication  
-- UPI/mobile payment adoption  
+- UPI / mobile payment adoption  
 - Online marketplace usage  
 - Digital bookkeeping and records  
-- Fear of fraud & transaction issues  
-- Location of business (city-wise)
+- Customer engagement through digital messaging  
+- Fear of fraud and transaction challenges  
+- Business location (city-wise)
 
-Target Variable:
-- **Growth (0 = No Growth, 1 = Growth)** based on sales & reach increase due to digitalization.
+### Target Variable
+**Growth**
 
----
+- `0` → No Growth  
+- `1` → Business experienced growth due to digitalization
 
-## 🛠 Technologies Used
-- Python  
-- Pandas  
-- NumPy  
-- Matplotlib & Seaborn  
-- Scikit-learn  
-- Jupyter Notebook  
+The target variable was created based on **sales and customer reach improvement scores**.
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
-EDA was performed to:
-- Understand distribution of digital adoption
-- Identify features influencing business growth
-- Visualize correlations using heatmaps
-- Compare growth vs non-growth businesses
+# 📊 Exploratory Data Analysis (EDA)
 
-Key insight:
-Digital payments, online presence, and record management showed strong correlation with business growth.
+EDA was performed to understand the relationship between digital adoption and business performance.
+
+Key steps included:
+
+- Growth distribution analysis
+- Correlation heatmap visualization
+- Identifying features most associated with business growth
+
+### Key Insight
+
+Digital payments, online presence, and digital record management show strong positive relationships with business growth.
 
 ---
 
-## 🤖 Machine Learning Models Used
+# 🤖 Machine Learning Models Used
+
+Several classification models were tested:
 
 ### 1️⃣ Logistic Regression
-- Accuracy: ~69%
-- Used as baseline model
-- Shows moderate relationship between digital adoption and growth
+- Accuracy: **~69%**
+- Used as a baseline model
 
-### 2️⃣ Random Forest (Best Model)
-- Accuracy: ~84.6%
-- Better prediction performance
-- Captures complex patterns in data
+### 2️⃣ Random Forest
+- Accuracy: **~84.6%**
+- Captures complex relationships in data
 
-Random Forest performed better than Logistic Regression for predicting business growth.
+### 3️⃣ Bagging Classifier
+- Improves stability by combining multiple models
+
+### 4️⃣ Gradient Boosting
+- Sequential learning to improve predictions
+
+### 5️⃣ Voting Classifier
+- Combines predictions from multiple models
 
 ---
 
-### 🔮 Sample Prediction
+# 🏆 Best Performing Model
 
-The trained Random Forest model was tested on a sample business with digital adoption features.
+**Random Forest / Bagging Classifier** achieved the highest accuracy (~85–87%), indicating strong predictive capability for identifying business growth patterns.
 
-Prediction:
-Business will likely see GROWTH due to digitalization 📈
+---
 
-Probability:
-Growth: 62%  
-No Growth: 38%
+# 🔮 Sample Prediction
 
-This demonstrates how the model can be used to predict business growth based on digital tool adoption.
+A trained model was tested on a sample business with digital adoption features.
 
-## 📁 Project Structure
+Prediction Result:
 
+📈 **Business likely to experience growth due to digitalization**
+
+Prediction Probability:
+
+- Growth → **62%**
+- No Growth → **38%**
+
+This demonstrates how machine learning can help estimate **business outcomes based on digital adoption behavior**.
+
+---
+
+# 📁 Project Structure
+
+```
 Digitalization-Business-Growth-ML/
 │
 ├── jharkhand.ipynb        # Main ML notebook
 ├── jharkhand.xlsx         # Survey dataset
-├── requirements.txt       # Libraries used
+├── requirements.txt       # Required libraries
 └── README.md              # Project documentation
-
+```
 
 ---
 
-## 🚀 Future Improvements
-- Combine all other eastern states dataset (Jharkhand, Odisha, West Bengal)
+# 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+# 🚀 Future Improvements
+
+- Combine datasets from multiple eastern states
 - Try advanced models (XGBoost, SVM)
-- Deploy as web app using Streamlit
-- Add feature importance visualization
+- Add feature importance analysis
+- Deploy project using **Streamlit**
 
 ---
 
-## 👩‍💻 Team Contributions
+# 👩‍💻 Team Contributions
 
-**Megha Muskan**
+### Megha Muskan
+- Data collection (Chakradharpur region)
+- Data preprocessing and cleaning
+- Feature engineering
+- Exploratory Data Analysis
+- Machine learning modeling
+- Model evaluation
+- GitHub repository creation
 
-* Data collection (Chakradharpur region)
-* Data preprocessing and cleaning
-* Feature engineering and encoding
-* Exploratory Data Analysis (EDA)
-* Machine Learning model building and evaluation
-* GitHub repository creation and documentation
+### Anshuman
+- Data collection (Jamshedpur region)
 
-**Anshuman**
-
-* Data collection (Jamshedpur region)
-
-**Arpita**
-
-* Data collection (Ranchi region)
+### Arpita
+- Data collection (Ranchi region)
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
+
 **Megha Muskan**  
-B.Tech CSE | Data Analytics & ML Enthusiast
-
+B.Tech CSE  
+Data Analytics & Machine Learning Enthusiast
